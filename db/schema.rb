@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150721091210) do
+ActiveRecord::Schema.define(version: 20150721100012) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20150721091210) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "fullname"
   end
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
