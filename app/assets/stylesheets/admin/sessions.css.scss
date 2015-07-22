@@ -1,0 +1,92 @@
+body{
+  font-size: 13px;
+}
+#wraper_session{
+  width: 100%;
+  #session{
+    width: 500px;
+    margin: 70px auto;
+    .flash{
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .session_content{
+      border: 1px solid #C2C2C2;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+      h2{
+          background-color: #6a7176;
+          color: white;
+          font-size: 14px;
+          letter-spacing: 2px;
+          line-height: 25px;
+          padding-left: 10px;
+          text-shadow: #000 0 1px 0;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+          border-bottom: 1px solid rgba(210, 203, 203, 0.41);
+          margin-top: 0px;
+        }
+      label{
+        float: left;
+        display: block;
+        width: 100px;
+        font-size: 13px;
+      }
+      .input-field{
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 4px;
+      }
+      #login{
+        form{
+          padding: 15px 30px;
+        }
+        .inputs{
+          height: 50px;
+          label{
+            float: left;
+            display: block;
+            width: 100px;
+            font-size: 13px;
+          }
+          .input-field{
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 4px;
+          }
+        }
+        .remember{
+          padding-left: 95px;
+          margin-top: -6px;
+          margin-bottom: 15px;
+          font-size: 14px;
+        }
+        .action{
+          input{
+            border: none;
+            background-color: #6A7176;
+            width: 100px;
+            height: 30px;
+            border-radius: 11px;
+            color: white;
+          }
+          a{
+            float: right;
+            font-size: 13px;
+            line-height: 40px;
+          }
+        }
+      }
+    .reset_pw{
+      @extend #login;
+      .action{
+        input{width: auto;margin-top: 15px}
+      }
+      .field{
+        label{line-height: 27px}
+      }
+    }
+  }
+}
+}

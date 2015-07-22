@@ -1,0 +1,27 @@
+<div id="wraper">
+  <div id="session">
+    <div class="flash flash-alert"> <%= t('admin.sessions.login.alert_login') %></div>
+    <div class="session_new_content">
+      <div id="login">
+        <h2><%= t('admin.sessions.login.title')%></h2>
+        <%= form_for :session,url: create_path, method: :post do |f| %>
+          <div class="inputs">
+            <%= f.label :email, t('email') %>
+            <%= f.text_field :email ,class: "input-field"%>
+          </div>
+          <div class="inputs">
+            <%= f.label :password, t('password') %>
+            <%= f.password_field :password, class: "input-field" %>
+          </div>
+          <div class="remember">
+            <%= f.check_box :remember %><%= t('remember')%>
+          </div>
+          <div class="action">
+            <%= f.submit t('login'), :disable_with => t('login_submit') %>
+            <%= link_to t('forgot_password')%>
+          </div>
+        <% end -%>
+      </div>
+    </div>
+  </div>
+</div>
